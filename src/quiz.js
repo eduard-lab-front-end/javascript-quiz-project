@@ -57,5 +57,5 @@ class Quiz {
     );
     return avgDifficulty / this.questions.length;
   }
+  //comment
 }
-0;
