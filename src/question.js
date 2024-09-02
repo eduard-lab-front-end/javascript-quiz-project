@@ -11,5 +11,6 @@ class Question {
     //   const j = Math.floor(Math.random() * (i + 1));
     //   [this.choices[i], this.choices[j]] = [this.choices[j], this.choices[i]];
     // }
+        // new line 
   }
 }
