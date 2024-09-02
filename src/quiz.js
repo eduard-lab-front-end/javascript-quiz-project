@@ -35,4 +35,27 @@ class Quiz {
       return true;
     }
   }
+
+  filterQuestionsByDifficulty(difficulty) {
+    // if (difficulty <= 1 || difficulty > 3 || typeof difficulty !== "number") {
+    //   console.error("Invalid number");
+    //   return;
+    // }
+    // this.questions = this.questions.filter((question) => {
+    //   return question.difficulty === difficulty;
+    // });
+    if (typeof difficulty === "number" && difficulty >= 1 && difficulty <= 3) {
+      this.questions = this.questions.filter(
+        (question) => question.difficulty === difficulty
+      );
+    }
+  }
+  averageDifficulty() {
+    const avgDifficulty = this.questions.reduce(
+      (acc, next) => acc + next.difficulty,
+      0
+    );
+    return avgDifficulty / this.questions.length;
+  }
 }
+0;
